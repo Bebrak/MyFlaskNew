@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<ul>
+    {% for user, password in users_passwords.items() %}
+    <li><i>{{user}} - <b>{{password}}</b></i></li>
+    {% endfor %}
+
+</ul>
+{% endblock %}
